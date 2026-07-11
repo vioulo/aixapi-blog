@@ -7,6 +7,103 @@
 import type { Locale } from '../config';
 
 export const messages = {
+  zh: {
+    'site.skipToContent': '跳转到内容',
+    'nav.home': '主页',
+    'nav.posts': '帖子',
+    'nav.tags': '标签',
+    'nav.categories': '分类',
+    'nav.archives': '存档',
+    'nav.about': '关于',
+    'nav.search': '搜索',
+    'nav.toggleMenu': '切换按钮',
+
+    'theme.toggle': '切换主题',
+    'theme.light': 'Light',
+    'theme.dark': 'Dark',
+    'theme.system': 'System',
+
+    'lang.switcher': '语言',
+    'lang.zh': '中文',
+    'lang.en': '英文',
+    'lang.fr': '法文',
+
+    'post.publishedOn': '发布于',
+    'post.updatedOn': '更新于',
+    'post.readingTime': 'min read',
+    'post.toc': '目录',
+    'post.tags': '标签',
+    'post.categories': '分类',
+    'post.previous': '上一篇',
+    'post.next': '下一篇',
+    'post.comments': '评论',
+    'post.commentsDisabled': '此帖评论禁用',
+    'post.commentsSetupTitle': '评论需要配置',
+    'post.commentsSetupBody':
+      'Giscus is enabled but not yet configured. Add the repository details below to start collecting comments.',
+    'post.commentsSetupStep1':
+      'Visit `giscus.app` and select your public GitHub repository (Discussions must be enabled).',
+    'post.commentsSetupStep2':
+      'Copy the generated `data-repo-id`, `data-category` and `data-category-id` values.',
+    'post.commentsSetupStep3':
+      'Set the `PUBLIC_GISCUS_ENABLED`, `PUBLIC_GISCUS_REPO`, `PUBLIC_GISCUS_REPO_ID`, `PUBLIC_GISCUS_CATEGORY` and `PUBLIC_GISCUS_CATEGORY_ID` env vars in your `.env` file.',
+    'post.commentsSetupStep4':
+      'Rebuild the site — this notice will be replaced by the live comments thread.',
+    'post.commentsSetupDocs': 'Open giscus.app',
+    'post.share': '分享',
+    'post.copyLink': '复制链接',
+    'post.copied': '已复制!',
+    'post.author': '作者',
+
+    'list.allPosts': '所有帖子',
+    'list.empty': '未找到相关帖子.',
+    'list.tagPosts': '标签',
+    'list.categoryPosts': 'Posts in',
+    'list.totalPosts': '帖子',
+    'list.totalPostsOne': '帖',
+
+    'pagination.previous': '上一页',
+    'pagination.next': '下一页',
+    'pagination.page': '页',
+    'pagination.of': 'of',
+
+    'archives.title': '存档',
+    'archives.empty': '空空如也',
+
+    'tags.title': '标签',
+    'tags.empty': '空空如也',
+
+    'categories.title': '分类',
+    'categories.empty': '空空如也',
+
+    'search.title': '搜索',
+    'search.placeholder': '搜索当前站点信息',
+    'search.openLabel': '开启搜索',
+    'search.closeLabel': '关闭搜索',
+    'search.empty': '没结果！',
+    'search.loading': '搜索中 ～',
+    'search.typeToStart': '输入进行搜索',
+    'search.hintShortcut': '任何时候敲击 / 打开搜索',
+    'search.searching': '搜索中 ～',
+    'search.noResultsFor': '没结果：',
+    'search.resultsCount': '结果',
+    'search.resultsCountOne': '结果',
+    'search.hintNavigate': '导航到',
+    'search.hintSelect': '打开',
+    'search.clearLabel': '清空',
+
+    'code.copy': '复制',
+    'code.copied': '已复制',
+
+    '404.title': '此页消失',
+    '404.description': '当前页面不知踪迹',
+    '404.cta': '返回首页',
+
+    'footer.poweredBy': '力量来自',
+    'footer.theme': '主题',
+    'footer.privacy': '隐私政策',
+    'footer.copyright': 'All rights reserved.',
+  },
   en: {
     'site.skipToContent': 'Skip to content',
     'nav.home': 'Home',
@@ -102,103 +199,6 @@ export const messages = {
     'footer.theme': 'Theme',
     'footer.privacy': 'Privacy Policy',
     'footer.copyright': 'All rights reserved.',
-  },
-
-  fr: {
-    'site.skipToContent': 'Aller au contenu',
-    'nav.home': 'Accueil',
-    'nav.posts': 'Articles',
-    'nav.tags': 'Étiquettes',
-    'nav.categories': 'Catégories',
-    'nav.archives': 'Archives',
-    'nav.about': 'À propos',
-    'nav.search': 'Rechercher',
-    'nav.toggleMenu': 'Basculer le menu',
-
-    'theme.toggle': 'Changer de thème',
-    'theme.light': 'Clair',
-    'theme.dark': 'Sombre',
-    'theme.system': 'Système',
-
-    'lang.switcher': 'Langue',
-    'lang.en': 'Anglais',
-    'lang.fr': 'Français',
-
-    'post.publishedOn': 'Publié le',
-    'post.updatedOn': 'Mis à jour le',
-    'post.readingTime': 'min de lecture',
-    'post.toc': 'Sommaire',
-    'post.tags': 'Étiquettes',
-    'post.categories': 'Catégories',
-    'post.previous': 'Précédent',
-    'post.next': 'Suivant',
-    'post.comments': 'Commentaires',
-    'post.commentsDisabled': 'Les commentaires sont désactivés pour cet article.',
-    'post.commentsSetupTitle': 'Les commentaires doivent être configurés',
-    'post.commentsSetupBody':
-      'Giscus est activé mais pas encore configuré. Renseignez les informations du dépôt ci-dessous pour activer les commentaires.',
-    'post.commentsSetupStep1':
-      'Rendez-vous sur `giscus.app` et sélectionnez votre dépôt GitHub public (les Discussions doivent être activées).',
-    'post.commentsSetupStep2':
-      'Copiez les valeurs générées de `data-repo-id`, `data-category` et `data-category-id`.',
-    'post.commentsSetupStep3':
-      'Définissez les variables d\u2019environnement `PUBLIC_GISCUS_ENABLED`, `PUBLIC_GISCUS_REPO`, `PUBLIC_GISCUS_REPO_ID`, `PUBLIC_GISCUS_CATEGORY` et `PUBLIC_GISCUS_CATEGORY_ID` dans votre fichier `.env`.',
-    'post.commentsSetupStep4':
-      'Reconstruisez le site — cet avis sera remplacé par le fil de commentaires en direct.',
-    'post.commentsSetupDocs': 'Ouvrir giscus.app',
-    'post.share': 'Partager',
-    'post.copyLink': 'Copier le lien',
-    'post.copied': 'Copié !',
-    'post.author': 'Auteur',
-
-    'list.allPosts': 'Tous les articles',
-    'list.empty': 'Aucun article.',
-    'list.tagPosts': 'Articles étiquetés',
-    'list.categoryPosts': 'Articles dans',
-    'list.totalPosts': 'articles',
-    'list.totalPostsOne': 'article',
-
-    'pagination.previous': 'Page précédente',
-    'pagination.next': 'Page suivante',
-    'pagination.page': 'Page',
-    'pagination.of': 'sur',
-
-    'archives.title': 'Archives',
-    'archives.empty': 'Aucun article pour le moment.',
-
-    'tags.title': 'Étiquettes',
-    'tags.empty': 'Aucune étiquette.',
-
-    'categories.title': 'Catégories',
-    'categories.empty': 'Aucune catégorie.',
-
-    'search.title': 'Recherche',
-    'search.placeholder': 'Rechercher sur le site',
-    'search.openLabel': 'Ouvrir la recherche',
-    'search.closeLabel': 'Fermer la recherche',
-    'search.empty': 'Aucun résultat.',
-    'search.loading': 'Chargement de la recherche…',
-    'search.typeToStart': 'Tapez pour rechercher…',
-    'search.hintShortcut': 'Appuyez sur / pour ouvrir la recherche',
-    'search.searching': 'Recherche…',
-    'search.noResultsFor': 'Aucun résultat pour',
-    'search.resultsCount': 'résultats',
-    'search.resultsCountOne': 'résultat',
-    'search.hintNavigate': 'pour naviguer',
-    'search.hintSelect': 'pour ouvrir',
-    'search.clearLabel': 'Effacer',
-
-    'code.copy': 'Copier',
-    'code.copied': 'Copié',
-
-    '404.title': 'Page introuvable',
-    '404.description': 'La page que vous cherchez s\u2019est envolée.',
-    '404.cta': 'Retour à l\u2019accueil',
-
-    'footer.poweredBy': 'Propulsé par',
-    'footer.theme': 'Thème',
-    'footer.privacy': 'Politique de confidentialité',
-    'footer.copyright': 'Tous droits réservés.',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 

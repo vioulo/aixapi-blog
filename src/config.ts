@@ -15,7 +15,7 @@ export const SITE_IMAGES = {
   ogDefault: ogDefaultImg,
 } as const;
 
-export const locales = ['en', 'fr'] as const;
+export const locales = ['zh', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
 /**
@@ -26,10 +26,10 @@ export type Locale = (typeof locales)[number];
  * automatically — the entry won't render and no broken `your-handle`
  * URL is exposed.
  */
-const GITHUB_HANDLE = import.meta.env.PUBLIC_GITHUB_HANDLE ?? '';
+const GITHUB_HANDLE = import.meta.env.PUBLIC_GITHUB_HANDLE ?? 'vioulo';
 const GITHUB_REPO = import.meta.env.PUBLIC_GITHUB_REPO ?? 'chirping-astro';
 const TWITTER_HANDLE = import.meta.env.PUBLIC_TWITTER_HANDLE ?? '';
-const CONTACT_EMAIL = import.meta.env.PUBLIC_CONTACT_EMAIL ?? '';
+const CONTACT_EMAIL = import.meta.env.PUBLIC_CONTACT_EMAIL ?? 'server@aixapi.net';
 const THEME_REPO_URL = 'https://github.com/kannansuresh/chirping-astro';
 
 /**
@@ -50,16 +50,16 @@ export const SITE: SiteConfig = {
   // ==========================================
 
   /** Default site title used as homepage <title> and meta. */
-  title: 'Chirping Astro',
+  title: 'AIxAPI Blog',
   /** Site tagline / description. */
   description:
-    'A modern, multilingual Astro v7 theme inspired by Chirpy — built with Tailwind v4, daisyUI, MDX, Pagefind, and Giscus.',
+    'AIxAPI.net 官方博客',
   /** Author/handle shown in footer + meta. */
   author: {
-    name: 'Chirping Astro',
+    name: 'AIxAPI',
     url: GITHUB_HANDLE ? `https://github.com/${GITHUB_HANDLE}` : undefined,
     avatar: avatarImg,
-    bio: 'A text-focused Astro v7 theme.',
+    bio: '专注提供稳定的 AI 中转服务',
   },
   /** Default OG image. */
   defaultOgImage: ogDefaultImg.src,
@@ -110,7 +110,7 @@ export const SITE: SiteConfig = {
   /** Supported locales. Changing this requires adding/removing locale folders, content, and i18n entries. */
   locales: locales,
   /** Default locale. Changing this is a breaking, atomic, multi-file operation. */
-  defaultLocale: 'en',
+  defaultLocale: 'zh',
   /** Show the language switcher and link to translated pages. */
   multilingual: true,
 };

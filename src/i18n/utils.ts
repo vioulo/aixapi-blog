@@ -118,7 +118,7 @@ export function formatDate(
   const d = typeof date === 'string' ? new Date(date) : date;
   if (Number.isNaN(d.getTime())) return '';
   if (SITE.isoDates) return d.toISOString().slice(0, 10);
-  const lang = locale === 'fr' ? 'fr-FR' : 'en-US';
+  const lang = locale === 'zh' ? 'zh-CN' : 'en-US';
   return new Intl.DateTimeFormat(lang, options).format(d);
 }
 
@@ -168,21 +168,21 @@ export function canonicalUrl(pathname: string): string {
 /** Pretty label for the language switcher. */
 export function localeLabel(locale: Locale): string {
   switch (locale) {
-    case 'fr':
-      return 'Français';
     case 'en':
-    default:
       return 'English';
+    case 'zh':
+    default:
+      return '中文';
   }
 }
 
 /** ISO BCP 47 language tag for `<html lang>` and date formatters. */
 export function htmlLang(locale: Locale): string {
   switch (locale) {
-    case 'fr':
-      return 'fr-FR';
     case 'en':
-    default:
       return 'en-US';
+    case 'zh':
+    default:
+      return 'zh-CN';
   }
 }
